@@ -49,11 +49,6 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Cursinger")
 	uint64 ID = InvalidID;
 
-	/**
-	 * All Ids with this bit set were assigned for dynamic ('D') entries that rely on the component lifetime.
-	 * Otherwise their Ids are from persistent collections ('P').
-	 */
-	static constexpr uint64 DynamicIdsBitMask = 1ULL << 63;
 	static constexpr uint64 InvalidID = 0;
 
 public:
